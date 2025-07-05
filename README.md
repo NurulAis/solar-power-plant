@@ -71,9 +71,7 @@ Initial data cleaning was performed using **SQL (PostgreSQL)** for performance a
 
 - **Plant 1** consistently produces higher DC Power than Plant 2 (≈1196% higher), likely due to differences in panel type, area, cleanliness, and sunlight intensity.
 - Despite higher DC Power, **Plant 1's inverter efficiency is critically low (~10%)**, indicating significant energy loss during DC-to-AC conversion.
-- **Plant 2** shows better inverter performance, with DC and AC Power values closely aligned, reflecting more efficient and stable energy delivery.
-- **Plant 1**: High DC Power output but very low AC Power → inverter efficiency only ~10%.  
-- **Plant 2**: DC and AC Power closely aligned → efficient and stable inverter performance.
+- **Plant 2** shows better inverter performance, with DC and AC Power values closely aligned, reflecting a high inverter **efficiency averaging around 97%**, which indicates efficient and stable energy conversion and delivery.
 - Module temperatures are consistently higher than ambient temperatures, reflecting normal solar panel operation and energy absorption. Maximum module temperatures (around 37–38°C) remain within safe limits but may slightly reduce efficiency. Ambient temperatures are relatively stable, indicating no extreme weather conditions, while lower temperature days correlate with reduced energy output.
 - Time series forecasting of **daily yield** reveals consistent daily patterns.
 - Feature analysis using **SHAP** and **Random Forest Regressor** indicates that **irradiation** and **ambient temperature** are major drivers of energy yield.
@@ -93,15 +91,15 @@ Initial data cleaning was performed using **SQL (PostgreSQL)** for performance a
 ## 🗂 Project Structure
 📁 project/
 ├── dataset/
-│   ├── Plant_1_Generation_Data.csv
-│   ├── Plant_1_Weather_Sensor_Data.csv
-│   ├── Plant_2_Generation_Data.csv
-│   └── Plant_2_Weather_Sensor_Data.csv
+│ ├── Plant_1_Generation_Data.csv
+│ ├── Plant_1_Weather_Sensor_Data.csv
+│ ├── Plant_2_Generation_Data.csv
+│ └── Plant_2_Weather_Sensor_Data.csv
 ├── notebooks/
-│   └── analysis.ipynb
+│ └── analysis.ipynb
 ├── sql/
-│   ├── create_generator_table.sql
-│   ├── create_sensor_table.sql
-│   ├── data_cleaning.sql
-│   └── simple_analysis_queries.sql
+│ ├── create_generator_table.sql
+│ ├── create_sensor_table.sql
+│ ├── data_cleaning.sql
+│ └── simple_analysis_queries.sql
 └── README.md
