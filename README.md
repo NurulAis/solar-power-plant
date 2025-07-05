@@ -89,30 +89,19 @@ Initial data cleaning was performed using **SQL (PostgreSQL)** for performance a
 ---
 
 ## 🗂 Project Structure
+```
 📁 project/
-
 ├── dataset/
-
 │ ├── Plant_1_Generation_Data.csv
-
 │ ├── Plant_1_Weather_Sensor_Data.csv
-
 │ ├── Plant_2_Generation_Data.csv
-
 │ └── Plant_2_Weather_Sensor_Data.csv
-
 ├── notebooks/
-
 │ └── analysis.ipynb
-
 ├── sql/
-
 │ ├── create_generator_table.sql
-
 │ ├── create_sensor_table.sql
-
 │ ├── data_cleaning.sql
-
 │ └── simple_analysis_queries.sql
-
 └── README.md
+```
